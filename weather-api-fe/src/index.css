@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-content {
+    @apply py-10 px-32
+}
+
+.basic-button {
+    @apply w-36 h-10 cursor-pointer flex justify-center items-center rounded bg-secondary-light text-on-primary p-2 hover:bg-primary-light transition-all
+}
+
+
+
+
+/*
+-----BUTTONS-----
+*/
+.gauss-button-outer {
+    /*@apply w-36 h-10 cursor-pointer select-none flex justify-center items-center rounded shadow bg-primary-standard text-sm text-on-primary transition-all duration-[50ms] hover:scale-105 hover:bg-secondary-standard active:bg-tertiary-standard active:scale-95*/
+    @apply w-36 h-10 cursor-pointer select-none flex justify-center items-center rounded-lg shadow bg-primary-standard        transition-all duration-[50ms]              hover:scale-105 active:scale-95 p-[0.2rem]
+}
+
+.gauss-button-inner {
+    @apply w-full h-full bg-white select-none flex justify-center items-center rounded-md font-semibold text-primary-standard
+}
+
+.gauss-button {
+    @apply w-36 h-10 cursor-pointer select-none flex justify-center items-center border border-black rounded hover:border-2 transition-all duration-[25ms]
+}
+.gauss-button-disabled{
+    @apply w-36 h-10 select-none flex justify-center items-center border-2 border-disabled text-disabled rounded
+}
+
+.icon-button-animated {
+    @apply flex-none w-9 cursor-pointer text-black scale-90 hover:scale-105 hover:drop-shadow-sm active:text-primary-standard active:scale-95 active:drop-shadow-none transition-all duration-75
+}
+
+/*
+-----MODAL-----
+*/
+.backdrop {
+    @apply fixed w-screen h-screen backdrop-blur z-10 flex justify-center items-center bg-black bg-opacity-25
+}
+
+.modal {
+    @apply fixed rounded-lg flex bg-neutral-50 border-2 border-primary-standard justify-center items-center shadow-xl p-5 z-20
+}
+
+/*
+-----INPUT FIELD-----
+*/
+.label {
+    @apply text-sm font-semibold text-tertiary-standard
+}
+
+.input-field {
+    @apply w-full min-w-fit mt-1 p-2 text-black rounded shadow border border-primary-standard hover:border-neutral-standard focus:outline-primary-standard transition-all duration-150
+}
+
+.datetime-input-field {
+    @apply w-16 px-2 py-1 text-end font-semibold rounded-md bg-white bg-opacity-90 focus:outline-primary-standard focus:bg-opacity-[0.96]
+}
